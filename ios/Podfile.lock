@@ -1,0 +1,40 @@
+PODS:
+  - Flutter (1.0.0)
+  - open_filex (0.0.2):
+    - Flutter
+  - open_share_plus (0.0.1):
+    - Flutter
+  - url_launcher_ios (0.0.1):
+    - Flutter
+  - webview_flutter_wkwebview (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - open_filex (from `.symlinks/plugins/open_filex/ios`)
+  - open_share_plus (from `.symlinks/plugins/open_share_plus/ios`)
+  - url_launcher_ios (from `.symlinks/plugins/url_launcher_ios/ios`)
+  - webview_flutter_wkwebview (from `.symlinks/plugins/webview_flutter_wkwebview/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  open_filex:
+    :path: ".symlinks/plugins/open_filex/ios"
+  open_share_plus:
+    :path: ".symlinks/plugins/open_share_plus/ios"
+  url_launcher_ios:
+    :path: ".symlinks/plugins/url_launcher_ios/ios"
+  webview_flutter_wkwebview:
+    :path: ".symlinks/plugins/webview_flutter_wkwebview/ios"
+
+SPEC CHECKSUMS:
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  open_filex: 6e26e659846ec990262224a12ef1c528bb4edbe4
+  open_share_plus: e4475cd9e43ff4032d7e7429b21a614fa7d79290
+  url_launcher_ios: 08a3dfac5fb39e8759aeb0abbd5d9480f30fc8b4
+  webview_flutter_wkwebview: 2e2d318f21a5e036e2c3f26171342e95908bd60a
+
+PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+
+COCOAPODS: 1.12.0
