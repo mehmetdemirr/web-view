@@ -18,20 +18,23 @@ dependencies:
   webview_flutter: ^4.2.2
   url_launcher: ^6.1.12
   open_share_plus: ^1.2.0
+  webview_cookie_manager: ^2.0.6
+  shared_preferences: ^2.2.0
+  maps_launcher: ^2.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  change_app_package_name: ^1.1.0
 
 flutter:
 
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

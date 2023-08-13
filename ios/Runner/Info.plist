@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Takipz Web View</string>
+	<string>Z Takip Müşteri Kayıt Sistemi</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>takipz_web_view</string>
+	<string>Z Takip Müşteri Kayıt Sistemi</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -56,6 +56,22 @@
     <key>NSAllowsArbitraryLoadsInWebContent</key>
     <true/>
 	</dict>
-	
+
+	<key>CFBundleDocumentTypes</key>
+	<array>
+  	<dict>
+    <key>CFBundleTypeName</key>
+    <string>PDF Document</string>
+    <key>LSItemContentTypes</key>
+    <array>
+      <string>com.adobe.pdf</string>
+    </array>
+ 	</dict>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+	 <string>com.adobe.reader</string>
+	</array>
+
 </dict>
 </plist>
