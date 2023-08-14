@@ -102,15 +102,17 @@ class _WebViewScreenState extends State<WebViewScreen> {
                   }
                 } else if (request.url.startsWith('https://wa.me/') ||
                     request.url.startsWith('whatsapp://')) {
+                  //https://wa.me/+905412913344/?text=Merhabalar.%20%C4%B0yi%20g%C3%BCnler.
+                  var list = request.url.split("/");
+                  var mesaj = Uri.decodeFull(list[4].split("=")[1]);
                   bool value = await Open.whatsApp(
-                      whatsAppNumber: phoneNumber,
-                      text: "Merhaba , iyi geceler");
+                      whatsAppNumber: phoneNumber, text: mesaj);
                   if (!value) {
                     final Uri smsLaunchUri = Uri(
                       scheme: 'sms',
                       path: phoneNumber,
                       queryParameters: <String, String>{
-                        'body': 'Merhaba , iyi geceler', // SMS içeriği
+                        'body': mesaj, // SMS içeriği
                       },
                     );
                     try {
