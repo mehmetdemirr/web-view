@@ -63,11 +63,17 @@ class _WebViewScreenState extends State<WebViewScreen> {
                 String phoneNumber = parts[1]; // Numara kısmı
                 if (request.url.startsWith('sms:')) {
                   // SMS gönderme işlemi
+                  String mesaj = "Merhaba";
+                  var list = (request.url).split("&");
+                  if (list.length == 2) {
+                    var listYeni = list[1].split("=");
+                    mesaj = Uri.decodeFull(listYeni[1]); //listYeni[1];
+                  }
                   final Uri smsLaunchUri = Uri(
                     scheme: 'sms',
                     path: phoneNumber,
                     queryParameters: <String, String>{
-                      'body': 'Merhaba , iyi geceler', // SMS içeriği
+                      'body': mesaj, // SMS içeriği
                     },
                   );
                   try {
