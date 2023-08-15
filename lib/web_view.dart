@@ -219,11 +219,11 @@ class _WebViewScreenState extends State<WebViewScreen> {
         }
       },
       child: Scaffold(
-        body: SafeArea(
-          child: RefreshIndicator(
-            onRefresh: () async {
-              controller.reload();
-            },
+        body: RefreshIndicator(
+          onRefresh: () async {
+            await controller.reload();
+          },
+          child: SafeArea(
             child: WebViewWidget(controller: controller),
           ),
         ),

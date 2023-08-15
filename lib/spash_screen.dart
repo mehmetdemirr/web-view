@@ -14,11 +14,13 @@ class _SplashScreenState extends State<SplashScreen> {
 
     Future.delayed(const Duration(seconds: 2)).then(
       (value) {
-        Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const WebViewScreen(),
-            ));
+        if (mounted) {
+          Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const WebViewScreen(),
+              ));
+        }
       },
     );
   }
@@ -26,21 +28,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        color: const Color.fromARGB(1, 25, 82, 139),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SizedBox(
-                child: Image.asset(
-                  "assets/logo_beyaz.png",
-                  width: MediaQuery.sizeOf(context).width / 1.6,
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ],
-          ),
+      backgroundColor: const Color.fromARGB(255, 25, 82, 139),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              "assets/logo_beyaz.png",
+              width: MediaQuery.sizeOf(context).width / 1.6,
+              fit: BoxFit.cover,
+            ),
+          ],
         ),
       ),
     );

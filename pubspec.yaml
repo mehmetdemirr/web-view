@@ -21,6 +21,8 @@ dependencies:
   webview_cookie_manager: ^2.0.6
   shared_preferences: ^2.2.0
   maps_launcher: ^2.2.0
+  connectivity_plus: ^4.0.2
+  lottie: ^2.6.0
 
 dev_dependencies:
   flutter_test:
